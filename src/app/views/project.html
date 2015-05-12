@@ -1,0 +1,41 @@
+<section>
+
+<div class="main-carousel">
+<div class="row">
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+  <div class="col-md-3 col-xs-12">
+  <h2><p>{{slide.text}}</p></h2>
+  <h4><kbd><a href='{{slide.url}}' target='_blank' title='{{slide.url}}'>Go To {{slide.text}}</a></kbd></h4><br></div> 
+  
+  
+  <div class="col-md-9 col-xs-12">
+ 
+        <img ng-src="assets/images/img/{{slide.image}}" style="height:400px;margin:auto;"  alt="{{slide.text}}" class="img-responsive">
+
+         <div class="carousel-caption">
+          <h4>Slide {{$index}}</h4>
+          
+      
+          
+        </div><!-- <br><br> -->
+       
+  </div> <br><br>
+  </slide>
+</carousel>
+</div>
+</div>
+<!-- <div class="main">
+<div class="works">
+  <div class='container'>
+	<div class='row'>
+  <div class="hidden-lg hidden-md col-sm-12"><h4>Our Works and What we have been workin on</h4></div></div>
+  </div></div>
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-12'>
+			<h1>Our works and projects at Inventive Labs LLC</h1>
+		</div>
+	</div>
+</div></div> -->
+</section>

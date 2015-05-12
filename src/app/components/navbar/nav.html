@@ -1,0 +1,42 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <a class="navbar-brand" ui-sref="home"><span class="glyphicon glyphicon-home"></span></a> -->
+       <li><a ui-sref="home"><span class='home-icon'><span class="glyphicon glyphicon-home"></span></span></a></li>
+        <li><a ui-sref="about">About</a></li>
+        <li><a ui-sref="services">Services</a></li>
+         <li><a ui-sref="process">Process</a></li>
+        <li><a ui-sref="tech">Technologies</a></li>
+        <li><a ui-sref="project">Projects</a></li>
+        <li class="dropdown">
+        <a ui-sref="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class='more-icon'><span class="glyphicon glyphicon-align-justify"></span></span></a>
+        
+          <!-- <a ui-sref="getInTouch.getQuote(getQuote)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          Get In Touch <span class="caret"></span></a> -->
+          <ul class="dropdown-menu" role="menu">
+           <li><a ui-sref="getInTouch.contact(contact)">Contact Us</a></li>
+            <li><a ui-sref="getInTouch.getQuote(getQuote)">Get a Quote</a></li>
+            <li class="divider"></li>
+             <li><a ui-sref="getInTouch.form(form)">Contact Us</a></li>
+          
+           <li><a ui-sref="getInTouch.jobs(jobs)">Careers</a></li>
+       </ul>
+       </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+

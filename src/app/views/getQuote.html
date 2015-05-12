@@ -1,0 +1,110 @@
+
+
+	<!-- <div class='container form-quote2'>
+		<div class='row'>
+		<div class="col-md-7 col-xs-7"> -->
+        <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Tell Us About Yourself and Your Project</h2>
+                </div>
+               
+			  <div ng-controller="GetQuoteController" class="panel-body">
+			   <div class="alert alert-danger" ng-show="error">
+                    <button class="close" data-dismiss="alert">x</button>
+                    <strong>Error!</strong> An error occured while trying to send message.
+                  </div>
+			   <div class="alert alert-success" ng-show="success">
+											    <button class="close" data-dismiss="alert">x</button>
+											    <strong>Success! </strong> Your message was successfully sent. We'll get back to you as soon as possible!
+											  </div>
+                 <div class='form-getQuote'>
+                    <form ng-submit="submit(quoteform)" name="quoteform" method="post" action="" class="form-horizontal" role="form">
+                    <fieldset>
+		                    <legend></legend>
+                        <div class="form-group" ng-class="{ 'has-error': quoteform.inputName.$invalid && quoteform.inputName.$dirty}">
+                            <label for="inputName" class="col-md-3 control-label" for="inputName">Name</label>
+                            <div class="col-md-9">
+                                <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required ng-minlength="3">
+                            <br>
+                            <span class="help-block has-error">
+														<span ng-show="quoteform.inputName.$error.required">Name is required</span>
+															<span ng-show="quoteform.inputName.$error.minlength">Minimum of 3 characters</span>
+													
+													</span>
+													</div>
+                        </div>
+                         <div class="form-group">
+                            <label for="inputCompany" class="col-md-3 control-label">Company Name</label>
+                            <div class="col-md-9">
+                                <input ng-model="formData.inputCompany" type="text" class="form-control" id="inputCompany" name="inputCompany" placeholder="Company Name or Organization">
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': quoteform.inputEmail.$invalid && quoteform.inputEmail.$dirty}">
+                            <label for="inputEmail" class="col-md-3 control-label">Email</label>
+                            <div class="col-md-9">
+                                <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required><br>
+                             <span class="help-block has-error">
+														<span ng-show="quoteform.inputEmail.$error.required">Email is required</span>
+													
+													</span>
+                            </div>
+                           
+                        </div>
+                         <div class="form-group">
+                            <label for="inputUrl" class="col-md-3 control-label">Website URL</label>
+                            <div class="col-md-9">
+                                <input ng-model="formData.inputUrl" type="url" class="form-control" id="inputUrl" name="inputUrl" placeholder="http://yourcompany.com">
+                            </div>
+                          
+                        </div>
+                         <div class="form-group">
+                            <label for="inputDate" class="col-md-3 control-label">Lauch Date</label>
+                            <div class="col-md-9">
+                            <div class="input-group">
+                                <input ng-model="formData.inputDate" class="form-control" rows="4" id="inputDate" name="inputDate" datepicker-popup="MMM dd, yyyy" is-open="opened">                                
+                                <span class="input-group-btn">
+															 	<button class="btn btn-default" ng-click="open($event)">
+															 		<i class="glyphicon glyphicon-calendar" />
+															 	</button>
+															 	</span>
+                            </div>
+                            </div>
+                        </div>
+                         <div class="form-group" ng-class="{ 'has-error': quoteform.inputPhone.$invalid && quoteform.inputPhone.$dirty}">
+                            <label for="inputPhone" class="col-md-3 control-label">Phone No</label>
+                            <div class="col-md-9">
+
+                                <input ng-model="formData.inputPhone" class="form-control" rows="4" id="inputPhone" name="inputPhone" ui-mask="999-999-9999 (required)" required><br>
+                                <span class="help-block has-error" ng-show="quoteform.inputPhone.$invalid">Telephone no is required</span>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': quoteform.inputMessage.$invalid && quoteform.inputMessage.$dirty}">
+                            <label for="inputMessage" class="col-md-3 control-label">About Your Project</label>
+                            <div class="col-md-9">
+                                <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your project details description..." required ng-minlength="20"></textarea><br>
+                                <span class="help-block has-error">
+														<span ng-show="quoteform.inputMessage.$error.required">Tell us about your project</span>
+														<span ng-show="quoteform.inputMessage.$error.minlength">Minimum of 20 characters</span>
+													
+													</span>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn btn-danger" ng-disabled="submitButtonDisabled"><span class="glyphicon glyphicon-flash">
+                                    Send Message
+                                </button><span>
+					<button class="btn btn-default" style="width:70px" ng-click="cancel()">Reset</button></span>
+                            </div>
+                        </div>
+                       </fieldset>
+                    </form>
+                    <p ng-class="result" style="padding: 15px; margin: 0;">{{resultMessage}}</p>
+                </div>
+                </div>
+    </div>
+    <!-- <div class="col-md-4 col-xs-12"></div> -->
+  <!-- </div>
+  </div>
+  </div> -->

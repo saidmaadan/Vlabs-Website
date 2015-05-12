@@ -1,0 +1,71 @@
+<section>
+  <article class='main-wrap'>
+    <div class="container">
+      <div class="row">
+        <div class="main">
+          <div class="col-md-12">
+            <img ng-src="assets/images/{{laptops.image}}" style="height:450px;" class="img-responsive" alt="Listers">
+          </div>
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class='main-content'>
+        
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <p>We design and develop web application with <span>Ruby on Rails</span>, <span>Javascript</span> full stack and open source technologies.</p>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+<hr>
+      <div class="row">
+        <div class='labs-content'>
+         <h2>Whatever your idea is, we bring to live <br>a <span>web application</span> version of it</h2>
+          <div class='col-sm-6 col-md-3' ng-repeat="lab in labs">
+            <span><i class="{{lab.icon}}"></i></span>
+            <h3>{{lab.title}}</h3>
+            <p>{{lab.content}}</p>
+          </div>
+        </div>
+      </div>
+      <br>
+<hr>
+    
+      <div class='works-content'>
+        <div class="row">
+       <div class='col-md-1'></div>
+       <div class='col-md-10'>
+        <h2>{{projectText}} <span>Inventive Labs</span></h2>
+        </div>
+        <div class='col-md-1'></div>
+        </div>
+         <div class="row">
+          <div class='col-sm-4' ng-repeat="project in projects">
+            <img ng-src='assets/images/{{project.image}}' style="height:250px;" class="img-responsive" alt="{{project.name}}" ><br>
+            <p>{{project.description}}</p>
+            <span><a href='{{project.url}}' target='_blank' title='{{project.url}}'>{{project.name}}</a></span>
+        </div>
+      </div></div><br>
+<hr>
+    <div class="row">
+        <div class='works-tools'>
+        <div class='col-md-1'></div>
+       <div class='col-md-10'>
+        <h1>{{toolsContent}}</h1>
+        </div>
+        <div class='col-md-1'></div></div>
+          <div class='col-md-2 col-sm-4' ng-repeat="tool in tools">
+            <img ng-src='assets/images/img/{{tool.image}}' class="img-responsive" alt="{{tool.title}}" style="height:80px;"><div class="caption">
+        <h4>{{tool.title}}</h4>
+        <p>{{tool.content}}</p>
+            </div>
+        </div>
+      </div>
+     <!--  <div class='tech-img'>
+       <img ng-src="assets/images/img/12-tech1.png" style="height:100px;" class="img-responsive" alt="tech">
+       </div> -->
+    </div>
+  </article>
+</section>

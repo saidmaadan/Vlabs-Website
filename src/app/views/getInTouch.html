@@ -1,0 +1,82 @@
+<section>
+	<div class="getin-content">
+		<div class="container">
+			<div class="panel panel-primary">
+				<div class="panel-heading" style="font-size:large">{{title}}</div>
+				<div class="panel-body">
+					<div class="getin-main">
+						<a ui-sref=".getQuote"
+								ui-sref-active="active">Work Inquiries</a>
+
+						<a ui-sref=".contact"
+								ui-sref-active="active">Contact Us</a>
+
+						<a ui-sref=".form"
+								ui-sref-active="active">Get In Touch</a>
+
+
+						<a ui-sref=".jobs"
+								ui-sref-active="active">Become an Inventive</a>
+						</div>
+							<div class='row'>
+								<div class='col-md-7 col-xs-12'><br>
+									<div ui-view></div>
+									</div>
+								 <div class='col-md-5 col-xs-12'> 
+								 <h2>Location</h2>
+								 <hr>
+
+								 <div id="map"></div>
+    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
+    </div>
+								<!--  <google-map center="{latitude: 30, longitude: -120}"></google-map> -->
+								 
+								<!--  <google-map center='map.center' zoom='map.zoom'>
+ 								   <marker coords='marker' data-ng-repeat='maker in makerList'>
+ 								   	<window isIconVisibleOnClick='true'>
+ 								   		<p>
+ 								   			{{$index}}
+ 								   			{{marker.message}}
+ 								   		</p>
+ 								   	</window>
+ 								   </marker>
+ 								   <polyline path='markerList' stroke='{color:"#dd4b39"}'></polyline>
+								 </google-map> -->
+								 <!-- <div id="map" class="img-responsible"></div>
+									  <script>
+									    var map = new GMaps({
+									      el: '#map',
+									      lat: 30.400095,
+									      lng: -97.652608
+									    });
+									  </script><br> --> 
+								<div class='row'>
+								 <div class='col-md-7 col-sm-6 col-xs-12'>     
+        <h4><i class="fa fa-map-marker fa-2x"></i>Address</h4>
+                12800 Harrisglenn Drive<br>
+                Austin, TX 78753<br>
+                 <span class="glyphicon glyphicon-envelope"></span>
+          <a class="email" href="mailto:info@inventivelabs.co">info@inventivelabs.co</a><br>
+       <span class="glyphicon glyphicon-envelope"></span> <a class="email" href="mailto:support@inventivelabs.c">support@inventivelabs.co</a>
+       </div>
+       <div class='col-md-5 col-sm-6 col-xs-12'> 
+       <h4>HotLine</h4>
+        <span class="glyphicon glyphicon-earphone"><span style="font-size:1.3em;color:#2DB3A5;font-weight:bold;">(512)-INVENTIVE</span></span>
+          <br> 
+         <h4>Connect with Us</h4>
+        
+         <a href = "https://facebook.com/inventtive" target="_blank"><i class="fa fa-facebook fa-2x" style="color:#032999;"></i></a>
+      <a href="https://www.twitter.com/inventtive1" target="_blank"><i class="fa fa-twitter fa-2x" style="color:#059DF0;"></i></a>
+        <a href = "https://pinterest.com/saidmaadan" target="_blank"><i class="fa fa-pinterest fa-2x" style="color:#C96B61;"></i></a>
+        <a href = "https://instagram.com/saidmaadan" target="_blank"><i class="fa fa-instagram fa-2x" style="color:#1E5C85;"></i></a>
+        <a href = "https://youtube.com/saidmaadan" target="_blank"><i class="fa fa-youtube fa-2x" style="color:#F00524;"></i></a></p>
+      </div>
+      </div>
+            </div>
+							</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>

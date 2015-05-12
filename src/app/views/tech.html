@@ -1,0 +1,31 @@
+<section>
+ <div class='main-tech'>
+	<div class='row'>
+	<div class='col-md-4'>
+		<h4>We work with the latest and best <kbd>software stack</kbd> and <kbd>platforms.</kbd> Each one has their own pros and cons, but we know when to use the one that suite for you product.</h4>
+	</div>
+		<div class='col-md-8'>
+ <img ng-src="assets/images/img/{{tech}}" style="height:400px;" class="img-responsive" alt="Listers">
+ 
+</div></div></div>
+
+<div class='container'>
+	<div class='row'>
+	<div class='col-md-12'>
+		<div class='main-tech-headlines'>{{content}}</div>
+	</div></div>
+	  <div class='row'>
+	  <div class='col-md-1'></div>
+		<div class='col-md-10'>
+		
+		<tabset>
+			<tab ng-repeat='tab in tabs'  heading='{{tab.title}}' active='tab.active'><span ng-repeat='content in tab.contents'><div class='main-tech-list'><kbd>{{content}}</kbd> </div></span></tab>
+		</tabset></div><br>
+		<div class='col-md-1'></div>
+
+		</div>
+			<h1>We love anything technologies and we are willing to share some of them with you</h1>
+			<p>Express is a minimal and flexible node.js web application framework, providing a robust set of features for building single and multi-page, and hybrid web applications.AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.</p>
+		</div>
+	</div>
+<section>
